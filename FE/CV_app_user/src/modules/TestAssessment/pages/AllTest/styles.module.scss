@@ -1,0 +1,47 @@
+@import '@globalStyles/common/mixins';
+
+.pageTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.005em;
+  color: #22216d;
+}
+
+.page_wrapper {
+  background-image: url('/images/backgrounds/test-assessment-bg.svg');
+  background-repeat: no-repeat;
+  background-position-y: -420px;
+  background-position-x: calc(100% + 350px);
+  z-index: 0;
+  font-family: 'Lexend Deca', sans-serif !important;
+}
+
+.card_title {
+  font-style: normal;
+  font-weight: 600;
+  @include mobile {
+    line-height: 24px;
+    font-size: 24px;
+  }
+
+  font-size: 36px;
+  line-height: 39px;
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+  letter-spacing: 0.117px;
+  color: #22216d;
+}
+
+.view_more {
+  img {
+    margin-bottom: 2px;
+  }
+  @include mobile {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,364 @@
+@import '@globalStyles/common/mixins';
+
+$test-section-h: 658px;
+
+.comomLink {
+  color: #3c3c3c;
+  flex: 1;
+
+  &:hover {
+    color: var(--core-primary-color);
+  }
+}
+
+.title {
+  color: #2364a9;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.pageHeadline {
+  margin: 25px 0 40px;
+  text-align: center;
+
+  &__title {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--core-primary-color);
+  }
+
+  &__des {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 0;
+  }
+}
+
+.test_list {
+  display: block;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+
+  &_title {
+    padding-top: 1rem;
+    @include mobile {
+      padding-top: 29px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 600;
+      line-height: 57px;
+      letter-spacing: -0.005em;
+      color: #fff;
+    }
+  }
+
+  &_content {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #e2e2ea;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &_card {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &__image {
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 15px;
+      object-fit: cover;
+      border: 1px solid rgb(0 0 0 / 15%) !important;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px;
+      gap: 10px;
+      margin: 0;
+      width: calc(100% - 32px);
+      /* Primary/3 button */
+
+      background: #fff;
+      border-radius: 20px;
+      /* Inside auto layout */
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+  }
+}
+
+.assessment {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  min-height: 300px;
+  min-width: 300px;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  &__box {
+    box-sizing: border-box;
+  }
+
+  &__avatar {
+    width: 100%;
+  }
+
+  &__name {
+    margin: 6px 0 12px;
+    overflow: hidden;
+    height: 70px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.005em;
+    color: #171725;
+  }
+
+  &__description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #44444f;
+  }
+}
+
+.footerBox {
+  height: 50px;
+  border-top: 1px solid rgb(0 0 0 / 10%);
+
+  &__tryTest {
+    cursor: pointer;
+  }
+
+  &__price {
+    box-sizing: border-box;
+  }
+}
+
+.question_count {
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 5px;
+  color: #92929d;
+}
+
+.test_name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  max-height: 100px;
+  margin-bottom: auto;
+  letter-spacing: -0.005em;
+  max-width: 200px;
+  color: #171725;
+}
+
+.test_des {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  height: 24px;
+  letter-spacing: 0.1px;
+  color: #44444f;
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.text_wrapper {
+  max-height: 70px;
+  margin-bottom: auto;
+}
+
+.bg_wrapper {
+  background-color: #22216d;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include mobile {
+    background-image: unset;
+  }
+
+  height: 400px;
+  z-index: -999;
+  width: 100%;
+  position: absolute;
+}
+
+.block_image {
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+  background: white;
+  overflow: hidden;
+}
+
+.hide_button {
+  display: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  border-radius: 10px;
+  padding: 2px 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  user-select: none;
+  text-transform: none;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.default_content {
+  display: flex;
+}
+
+.block_content {
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  transform: translateY(-50%);
+  padding: 16px;
+  width: calc(100% - 32px);
+  transition: all 0.5s ease-in-out;
+
+  &_currentShow {
+    background: rgb(64 62 204 / 100%);
+    color: white;
+
+    p {
+      color: white;
+    }
+
+    a {
+      color: #3bff00;
+    }
+
+    .footerBox {
+      .hide-button {
+        display: none;
+      }
+
+      &__price {
+        color: white !important;
+      }
+
+      &__tryTest {
+        color: #403ecc !important;
+        background-color: white;
+      }
+    }
+  }
+
+  &:hover {
+    background: rgb(64 62 204 / 100%);
+    color: white;
+
+    .footerBox {
+      .hide_button {
+        display: flex;
+        color: #403ecc !important;
+        background: white;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .default_content {
+        transition: all 0.5s ease-in-out;
+        display: none;
+      }
+
+      &__price {
+        color: white !important;
+      }
+
+      &__tryTest {
+        color: #403ecc !important;
+        background-color: white;
+      }
+    }
+
+    p {
+      color: white;
+    }
+
+    a {
+      color: #3bff00;
+    }
+  }
+}
+
+.hide_scroll_bar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.dots {
+  left: 50%;
+  transform: translate(-50%, -600%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  margin: 15px 7px 0;
+  background-color: transparent;
+}
+
+.dot {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &_active {
+    background-color: #8509c8;
+  }
+
+  &_normal {
+    background-color: #92929d;
+  }
+}

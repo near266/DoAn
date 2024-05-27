@@ -1,0 +1,41 @@
+.breadcrum {
+  z-index: 99;
+
+  a {
+    font-family: 'Lexend Deca', sans-serif !important;
+  }
+
+  p {
+    font-family: 'Lexend Deca', sans-serif !important;
+  }
+}
+
+.breadcrum_list {
+  font-size: 16px;
+}
+
+.breadcrum_item {
+  display: block;
+
+  a {
+    color: #696974;
+
+    &:hover {
+      color: #696974;
+      text-decoration: underline;
+    }
+  }
+
+  &:last-child {
+    a,
+    p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1px;
+      color: #000;
+    }
+  }
+}

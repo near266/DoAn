@@ -1,0 +1,235 @@
+@import '@globalStyles/common/mixins';
+
+.page {
+  background: #f0f0f0;
+  padding-top: 20px;
+
+  @include mobile {
+    padding-top: 15px;
+  }
+
+  &__adsPost {
+    margin-bottom: 10px;
+  }
+}
+
+.postArea {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.action {
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f1f1;
+
+  &__time {
+    font-size: 12px;
+    color: #999;
+  }
+}
+
+.actionInfo {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    i {
+      margin-right: 3px;
+      font-size: 18px;
+    }
+  }
+
+  &__iconLabel {
+    font-size: 14px;
+  }
+}
+
+.uiHeader {
+  padding: 20px 15px 0;
+  margin-bottom: 5px;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #00b5ad;
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}
+
+.postTags {
+  margin-top: 15px;
+  font-size: 18px;
+  padding-bottom: 5px;
+
+  &__item {
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 13px;
+    vertical-align: middle;
+    background-color: #e8e8e8;
+    color: rgb(0 0 0 / 65%);
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: background 0.1s linear;
+
+    &:hover {
+      background-color: #e0e0e0;
+      border-color: #e0e0e0;
+      color: rgb(0 0 0 / 70%);
+    }
+  }
+}
+
+.postAvatar {
+  margin-bottom: 30px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.postContent {
+  padding: 0 15px 35px;
+}
+
+.adsInsideContent {
+  text-align: center;
+  margin: 15px 0 20px;
+}
+
+.appellateFoot {
+  margin: 0 15px 30px;
+
+  a {
+    color: #313676;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #313676;
+  }
+}
+
+.commentBox {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.rightContent {
+  margin-bottom: 20px;
+}
+
+.banner {
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.box {
+  padding: 25px 15px;
+}
+
+.boxTitle {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.author {
+  margin-bottom: 20px;
+
+  &__avatar {
+    height: 90px;
+    text-align: center;
+    margin-bottom: 12px;
+
+    img {
+      width: 90px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 6px rgb(0 0 0 / 12%) !important;
+    }
+  }
+}
+
+.authorDetail {
+  text-align: center;
+  margin-bottom: 10px;
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__separator {
+    margin: 0 0 4px;
+  }
+
+  &__more {
+    font-size: 14px;
+  }
+
+  &__textAfter {
+    color: #898989;
+  }
+}
+
+.followBox {
+  text-align: center;
+  height: 30px;
+}
+
+.authorPost {
+  margin-bottom: 20px;
+}
+
+.referencePost {
+  margin-bottom: 20px;
+}
+
+.otherPost {
+  font-size: 16px;
+
+  &__list {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+
+    li {
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+}

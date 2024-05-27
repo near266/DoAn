@@ -1,0 +1,18 @@
+.answerItem {
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-bottom: 8px;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    p {
+      color: #403ecc;
+    }
+
+    .MuiRadio-root {
+      color: #403ecc;
+    }
+  }
+}

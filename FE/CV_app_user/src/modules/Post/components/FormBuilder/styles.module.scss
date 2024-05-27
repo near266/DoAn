@@ -1,0 +1,16 @@
+.submitArea {
+  margin-top: 10px;
+
+  &__button {
+    height: 35px;
+    text-transform: inherit;
+  }
+
+  &__back {
+    margin-left: 15px;
+  }
+}
+
+.inputField {
+  margin-bottom: 15px;
+}

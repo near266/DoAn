@@ -1,0 +1,41 @@
+.bm-overlay {
+  top: 0;
+  left: 0;
+  background: #171725;
+  opacity: 0.1;
+}
+
+.bm-menu-wrap {
+  top: 0;
+  left: 0%;
+  background: rgb(255 255 255);
+  padding: 12px 9px 35px 0;
+  overflow: auto;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  max-width: 300px;
+
+  &::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f6f6ff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    opacity: 0.3;
+    transition: opacity 0.3s ease 0s;
+    background: rgb(0 0 0 / 30%);
+    border-radius: 10px;
+  }
+}
+
+.bm-menu {
+  overflow: visible !important;
+}
+
+.bm-item-list {
+  height: 100% !important;
+  display: flex;
+}

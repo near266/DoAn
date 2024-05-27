@@ -1,0 +1,34 @@
+#quizPage {
+  padding: 30px 0 40px;
+}
+
+.quiz {
+  margin-bottom: 20px;
+}
+
+.footer {
+  &__container {
+    text-align: center;
+  }
+
+  &__submitButton {
+    padding: 5px 20px;
+  }
+}
+
+.timer {
+  position: fixed;
+  right: 32px;
+  top: 50%;
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .timer {
+    position: fixed;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}

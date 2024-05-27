@@ -1,0 +1,68 @@
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.typeBox {
+  padding: 10px 16px;
+  border: 1px solid #e7eaec;
+  border-radius: 4px;
+  position: relative;
+
+  &__content {
+    textarea {
+      height: 60px;
+      resize: none;
+      overflow-y: hidden;
+      border-radius: 15px;
+
+      &:focus {
+        border-color: #ced4da;
+        outline: none;
+        box-shadow: none;
+      }
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+  }
+
+  &__emojiPicker {
+    position: absolute;
+    top: 26px;
+    right: 25px;
+  }
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+  &__commentBtn {
+    font-size: 15px;
+    padding: 3px 18px;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+
+  &__cancelComment {
+    margin-right: 10px;
+    border: 1px solid rgb(116 116 116 / 75%);
+  }
+}
+
+.commentList {
+  margin-top: 20px;
+}
+
+.showMore {
+  font-size: 14px;
+  color: var(--core-primary-color);
+  background: #efeff3;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px;
+  display: block;
+}

@@ -1,0 +1,108 @@
+// @import '@globalStyles/common/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(246 246 255) !important;
+  font-family: 'Lexend Deca', sans-serif;
+  zoom: 0.8;
+  zoom: 80%;
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f6f6ff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #6969e7;
+    border-radius: 10px;
+  }
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+  max-width: 1302px;
+  margin: 0 auto;
+}
+
+.hide_scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.custom_scrollbar {
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f6f6ff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #6969e7;
+    border-radius: 10px;
+  }
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: 0;
+}
+
+.MuiBox-root {
+  padding: 0;
+}
+
+.section-title {
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  font-weight: 600 !important;
+  line-height: 57px !important;
+  letter-spacing: -0.005em !important;
+  margin-top: 15px !important;
+
+  @include mobile {
+    font-size: 1.8rem !important;
+  }
+}
+
+.cartList {
+  .ant-checkbox-group {
+    width: 100%;
+  }
+}
+
+.figure-title {
+  font-size: 18px !important;
+}
+
+.MuiPaginationItem-root.Mui-selected {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #403ecc;
+}

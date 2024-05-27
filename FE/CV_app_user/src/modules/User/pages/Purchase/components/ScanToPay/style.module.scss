@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  margin-inline: auto;
+
+  .switchOption {
+    cursor: pointer;
+  }
+
+  .headerTitle {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #22216d;
+    margin-bottom: 52px;
+    text-align: center;
+  }
+
+  .qrContainer {
+    margin-bottom: 20px;
+
+    .imageContainer {
+      background: #e2e2ea;
+      border-radius: 20px;
+      padding: 17px 15px;
+      align-self: flex-start;
+
+      .qrImageContainer {
+        padding: 5px 12px;
+
+        .qrImage {
+          max-width: 100%;
+          background: white;
+          margin-bottom: 9px;
+        }
+      }
+
+      .qrTotal {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      .qrPrice {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    .switchButton {
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #22216d;
+      cursor: pointer;
+      margin-right: 15px;
+      margin-top: 16px;
+    }
+
+    .guildContainer {
+      flex-wrap: wrap;
+
+      .guildItem {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.1px;
+        display: flex;
+        margin-top: 20px;
+
+        .guildContent {
+          color: #696974;
+        }
+
+        .guildIndex {
+          width: 39px;
+          height: 39px;
+          padding: 19.5px;
+          background: #3bb1cf;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
+          color: white;
+
+          span {
+            display: block;
+            width: 1ch;
+          }
+        }
+      }
+    }
+
+    .timerContainer {
+      max-width: 70%;
+      margin-top: 50px;
+      background: #e2e2ea;
+      border-radius: 20px;
+      padding: 20px 90px;
+      display: flex;
+      justify-content: center;
+      margin-inline: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .bankContainer {
+    margin-bottom: 5%;
+
+    .bankTitle {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 39px;
+      margin-bottom: 21px;
+      color: #22216d;
+    }
+  }
+  @media (max-width: 576px) {
+    .headerTitle {
+      text-align: left;
+      font-size: 28px;
+      line-height: 39px;
+      white-space: pre;
+    }
+
+    .qrContainer {
+      .imageContainer {
+        margin-inline: auto;
+      }
+
+      .totalContainer {
+        padding: 0 12px;
+
+        .qrTotal {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}

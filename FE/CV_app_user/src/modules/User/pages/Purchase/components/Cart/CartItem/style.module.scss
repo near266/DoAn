@@ -1,0 +1,43 @@
+.cartItemContainer {
+  padding-block: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+
+  &.chosed {
+    border: 1px solid #403ecc;
+  }
+
+  .cartCheckBox {
+    padding-inline: 23px;
+  }
+
+  .tableCheckbox {
+    @media (max-width: 576px) {
+      padding-inline: 13px;
+    }
+  }
+
+  .price {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: right;
+    letter-spacing: 0.1px;
+    color: #44444f;
+  }
+
+  .itemInfo {
+    display: flex;
+    align-items: center;
+
+    .testImg {
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .title {
+      margin-left: 15px;
+    }
+  }
+}

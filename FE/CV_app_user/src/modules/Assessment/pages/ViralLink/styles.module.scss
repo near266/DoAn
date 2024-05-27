@@ -1,0 +1,23 @@
+.form_field {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+
+  // width: 30%;
+  &__textfield {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    margin-top: 40px;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    appearance: none;
+  }
+}
+
+.viral_container {
+  padding: 30px 0 40px;
+}

@@ -1,0 +1,275 @@
+@import '@globalStyles/common/mixins';
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+
+  .headerTitle {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #22216d;
+    margin-bottom: 52px;
+    letter-spacing: -0.005em;
+    text-align: center;
+  }
+
+  .thanksLetter {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+
+    .content {
+      line-height: 28px;
+      letter-spacing: 0.1px;
+
+      .letterTitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+        color: #403ecc;
+        margin-bottom: 24px;
+      }
+
+      .letterContent {
+        font-weight: 400;
+        font-size: 18px;
+        color: #696974;
+
+        .email {
+          font-weight: 500;
+          color: black;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .headerTitle {
+      font-size: 28px;
+      line-height: 39px;
+      text-align: left;
+      white-space: pre;
+    }
+
+    .content {
+      margin-top: 18px;
+      order: 2;
+    }
+
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.posts {
+  margin-bottom: 0;
+}
+
+.title {
+  font-weight: 600;
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 57px;
+  letter-spacing: -0.005em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+
+  @include mobile {
+    margin-bottom: 0;
+  }
+}
+
+.postItem {
+  overflow: hidden;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  min-height: 300px;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: white;
+
+  &__subContent {
+    padding: 0 10px 10px;
+    background: white;
+
+    h4 {
+      margin: 6px 0 12px;
+      overflow: hidden;
+      height: 70px;
+      font-family: 'Lexend Deca', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -0.005em;
+      color: #171725;
+    }
+  }
+}
+
+.figure_caption {
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #44444f;
+}
+
+.listPost {
+  background-color: white;
+  scroll-snap-type: x mandatory;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h4 {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    line-height: 24px;
+    /* or 133% */
+
+    letter-spacing: -0.005em;
+    color: #171725;
+  }
+
+  &__article {
+    margin-bottom: 24px;
+    min-width: 310px;
+    scroll-snap-align: start;
+  }
+
+  &__image {
+    width: 100%;
+    height: 205px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &__time {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+}
+
+.emptyPost {
+  margin-bottom: 24px;
+  color: white;
+  text-align: center;
+}
+
+.bg_wrapper {
+  background: #22216d;
+  height: 400px;
+  z-index: -999;
+  /* z-index: -999; */
+  width: 100%;
+  position: absolute;
+}
+
+.card_footer {
+  align-items: center;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  border-top: 2px solid #f2f2f2;
+  padding: 10px 0;
+}
+
+.action {
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f1f1;
+
+  &__time {
+    font-size: 12px;
+    color: #999;
+  }
+}
+
+.actionInfo {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    i {
+      margin-right: 3px;
+      font-size: 18px;
+    }
+  }
+
+  &__iconLabel {
+    font-size: 14px;
+  }
+}
+
+.block_image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+  background: white;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.block_content {
+  padding: 10px;
+  background: white;
+  border-radius: 20px 0;
+}
+
+.tabs {
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Lexend Deca', sans-serif;
+  text-transform: none;
+  font-size: 22px;
+  padding: 0;
+  line-height: 39px;
+  letter-spacing: 0.117px;
+  color: #fff;
+
+  &__selected {
+    color: #fff !important;
+  }
+
+  &__flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.indicator {
+  background: #fff;
+  border-radius: 8px;
+}

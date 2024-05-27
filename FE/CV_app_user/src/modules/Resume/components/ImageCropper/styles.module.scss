@@ -1,0 +1,50 @@
+.imageViewInPage {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.modalRoot {
+  z-index: 3000;
+}
+
+.modalContent {
+  border: none;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #17a2b8;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.modalBody {
+  padding: 16px;
+
+  &__title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.preview {
+  text-align: center;
+}
+
+.actions {
+  margin-top: 20px;
+
+  &__btn {
+    padding: 4px 15px;
+    font-size: 14px;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}

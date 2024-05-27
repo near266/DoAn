@@ -1,0 +1,77 @@
+@import '@globalStyles/common/mixins';
+
+.card_container {
+  @apply tw-px-[10px] first:tw-pl-0;
+
+  @include mobile {
+    // @apply tw-p-0;
+  }
+
+  p {
+    @apply tw-m-0;
+  }
+}
+
+.card_wrapper {
+  @apply tw-w-full tw-h-full  tw-snap-x tw-snap-mandatory tw-bg-transparent tw-rounded-[10px];
+}
+
+.card_item {
+  @apply tw-snap-start tw-flex tw-gap-4 tw-w-full tw-h-full tw-rounded-[10px] tw-border-solid tw-border-[1px] tw-border-[#F1F1F5] tw-flex tw-flex-col tw-p-4 tw-bg-white  tw-shadow-md;
+}
+
+.card_header {
+  @apply tw-flex tw-flex-row tw-items-center tw-justify-between tw-bg-white tw-rounded-[10px] tw-top-0;
+
+  p {
+    @apply tw-text-right tw-absolute tw-top-0 tw-text-2xl tw-text-black tw-font-bold tw-leading-tight  tw-right-6;
+  }
+
+  &__image {
+    @apply tw-rounded-[10px] tw-relative tw-h-[64px] tw-w-[64px] tw-overflow-hidden tw-object-cover tw-border-solid tw-border-[#F1F1F5] tw-border-[1px] tw-shadow-lg;
+  }
+}
+
+.card_body {
+  @apply tw-flex tw-mt-[8px] tw-flex-col tw-bg-white tw-rounded-[10px];
+
+  &__title {
+    @apply tw-text-gray-800 tw-font-bold tw-leading-tight;
+
+    a {
+      @apply tw-text-black tw-font-bold tw-text-xl tw-leading-tight;
+    }
+  }
+
+  &__description {
+    @apply tw-font-[400] tw-text-[#44444F] tw-leading-[20px];
+  }
+
+  &__location {
+    @apply tw-mt-3 tw-flex tw-justify-between tw-items-center;
+  }
+
+  &__subtitle {
+    @apply tw-text-gray-600 tw-text-sm tw-font-bold tw-leading-tight;
+  }
+}
+
+.card_footer {
+  @apply tw-text-[#B5B5BE] tw-text-sm tw-font-bold tw-leading-tight tw-flex tw-justify-between tw-items-center;
+
+  &__time {
+    @apply tw-bg-[#F1F1F5] tw-p-3  tw-rounded-[5px]  tw-flex tw-items-center tw-justify-center;
+
+    p {
+      @apply tw-m-0 tw-text-[#696974] tw-leading-[12px] tw-font-[500];
+    }
+  }
+
+  &__updateAt {
+    @apply tw-text-[#B5B5BE] tw-justify-between tw-items-center;
+
+    p {
+      @apply tw-m-0;
+    }
+  }
+}

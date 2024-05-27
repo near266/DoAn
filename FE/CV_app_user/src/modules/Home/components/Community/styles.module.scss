@@ -1,0 +1,31 @@
+.community {
+  padding: 25px 0;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #22216d;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.box {
+  padding: 10px 0;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.logoBox {
+  width: 70px;
+  margin-right: 45px;
+  margin-bottom: 18px;
+}
+
+.logoBoxRight {
+  width: 70px;
+  margin-right: 45px;
+  margin-bottom: 15px;
+}

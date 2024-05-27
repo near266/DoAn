@@ -1,0 +1,71 @@
+#__footer {
+  position: relative;
+  margin: 10px 0;
+  padding: 30px 0;
+  font-family: 'Lexend Deca', sans-serif;
+  box-shadow: 0 0 0 rgb(0 0 0 / 25%), 0 0 5px rgb(0 0 0 / 25%);
+  z-index: -1;
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    margin-bottom: 5px;
+    color: #22216d;
+  }
+
+  .description {
+    font-style: normal;
+    max-width: 336px;
+  }
+
+  .address {
+    // width: 364px;
+  }
+
+  .infor-company {
+    margin-top: 10px;
+
+    .copyright {
+      font-size: 13px;
+      color: #666;
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .social:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .social-list-icon {
+    display: flex;
+
+    li {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+
+    .social-icon {
+      color: #333;
+      font-size: 20px;
+    }
+  }
+
+  .social-contact {
+    min-width: 227px;
+
+    .email-sub {
+      width: 65%;
+    }
+  }
+
+  .footer-title {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+}

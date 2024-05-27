@@ -1,0 +1,15 @@
+.likeButton {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.liked {
+  color: #ef2c46;
+  font-size: 18px;
+}
+
+.notLiked {
+  color: inherit;
+  font-size: 18px;
+}

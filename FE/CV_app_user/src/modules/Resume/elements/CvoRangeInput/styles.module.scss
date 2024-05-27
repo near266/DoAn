@@ -1,0 +1,45 @@
+$before-color: var(--common-color);
+$after-color: #eee;
+$point-color: #3cb371;
+
+@mixin range-style {
+  background: $point-color;
+  cursor: ew-resize;
+  box-shadow: -1005px 0 0 1000px $before-color;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  border: 0;
+}
+
+.cvRangeInput {
+  appearance: none;
+  background-color: $after-color;
+  height: 10px;
+  overflow: hidden;
+  width: 100%;
+  outline: none;
+
+  &::-webkit-slider-runnable-track {
+    appearance: none;
+    height: 10px;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    @include range-style;
+  }
+
+  &::-moz-range-thumb {
+    @include range-style;
+  }
+
+  &::-moz-range-track {
+    background-color: $after-color;
+  }
+
+  &::-moz-range-progress {
+    background-color: $after-color;
+    height: 10px;
+  }
+}

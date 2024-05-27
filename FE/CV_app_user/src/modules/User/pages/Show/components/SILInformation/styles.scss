@@ -1,0 +1,33 @@
+.rc-sil-information {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #fff;
+  padding: 10px 15px;
+
+  .area-status {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .area {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 14px;
+
+    .link {
+      color: #007bff;
+      text-decoration: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .question-round-two {
+    margin: 15px auto;
+  }
+}

@@ -1,0 +1,31 @@
+.introduce {
+  margin-bottom: 20px;
+
+  &__title {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--core-primary-color);
+    color: #fff;
+
+    h2 {
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+.introduceNote {
+  border-left: 5px solid var(--core-primary-color);
+  box-shadow: 6px 6px 21px 0 rgb(0 0 0 / 12%);
+  padding: 25px 15px 25px 40px;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}

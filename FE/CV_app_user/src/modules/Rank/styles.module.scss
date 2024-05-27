@@ -1,0 +1,67 @@
+$border-like-table: 1px solid var(--core-primary-color);
+$first-column-width: 100px;
+$second-column-width: 70%;
+
+.page {
+  margin: 30px 0;
+}
+
+.rank {
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 15px 5px;
+  border-right: $border-like-table;
+  border-left: $border-like-table;
+  border-bottom: $border-like-table;
+
+  &__no {
+    width: $first-column-width;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__medal {
+    width: 30px;
+  }
+
+  &__name {
+    width: $second-column-width;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &__points {
+    width: calc(#{100% - $second-column-width} - #{$first-column-width});
+    text-align: center;
+  }
+}
+
+.header {
+  color: #fff;
+  background-color: var(--core-primary-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.info {
+  &__box {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--core-primary-color);
+  }
+}

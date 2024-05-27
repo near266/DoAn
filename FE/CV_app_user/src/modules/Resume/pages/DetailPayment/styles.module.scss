@@ -1,0 +1,578 @@
+.page {
+  padding: 30px 0;
+}
+
+.head {
+  margin-bottom: 16px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+
+    h1 {
+      font-size: 40px;
+      color: #22216d;
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 16px;
+      color: #22216d;
+
+      @media screen and (max-width: 767.98px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__addNew {
+    margin-left: 5px;
+    padding: 4px 10px;
+    font-size: 14px;
+
+    i {
+      margin-right: 8px;
+      font-size: 12px;
+    }
+  }
+}
+
+.tableHeaderSearch {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 16px 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.pickerRange {
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.cvs {
+  position: relative;
+
+  :global {
+    .ant-table-wrapper {
+      table {
+        border-collapse: inherit;
+        border-spacing: 0 10px;
+      }
+
+      .ant-table {
+        background-color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        .ant-table-container {
+          padding: 0 40px 16px;
+        }
+      }
+
+      .ant-table-thead {
+        tr {
+          border-radius: 20px 0;
+
+          th {
+            &::before {
+              display: none;
+            }
+
+            background-color: #f1f1f5;
+            font-size: 16px;
+            color: #92929d;
+
+            &:first-child {
+              border-top-left-radius: 20px !important;
+            }
+
+            &:last-child {
+              border-top-right-radius: 20px !important;
+            }
+          }
+        }
+      }
+
+      .ant-table-tbody {
+        td {
+          font-size: 16px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-right: 20px;
+          border-top: 1px solid #f1f1f5;
+          border-bottom: 1px solid #f1f1f5;
+
+          .ant-tag {
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+            height: 20px;
+          }
+
+          .btn-primary {
+            font-size: 16px;
+            color: #696974;
+            border-radius: 10px;
+            background-color: #f1f1f5;
+            padding: 10px 15px;
+            border: none;
+
+            &:hover {
+              background-color: #403ecc;
+              color: white;
+            }
+          }
+        }
+
+        td:first-child {
+          padding-left: 20px;
+          margin-left: 20px;
+          padding-right: 0;
+          border-left: 1px solid #f1f1f5;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        td:last-child {
+          border-right: 1px solid #f1f1f5;
+          margin-right: 20px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+
+      .ant-pagination {
+
+        .ant-pagination-prev,
+        .ant-pagination-next {
+          .ant-pagination-item-link {
+            border-radius: 5px;
+          }
+        }
+
+        .ant-pagination-item {
+          border: none;
+          font-weight: bold;
+          font-size: 14px;
+
+          &:hover {
+            color: #403ecc;
+          }
+        }
+
+        .ant-pagination-item-active {
+          color: #403ecc;
+        }
+
+        .ant-select-selector {
+          border-radius: 8px;
+          border: 1px solid #d5d5dc;
+        }
+      }
+    }
+  }
+
+  .paginationInfo {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+  }
+
+}
+
+.record {
+  width: 100%;
+  background: #fff;
+  padding: 20px 30px;
+  position: relative;
+  display: flex;
+
+  &:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  &__template {
+    width: 120px;
+
+    img {
+      width: 85px;
+    }
+  }
+}
+
+.detail {
+  width: calc(100% - 120px);
+
+  &__title {
+    margin-bottom: 15px;
+
+    a {
+      font-size: 18px;
+      font-weight: 600;
+      color: #28a745;
+    }
+  }
+
+  &__viewLink {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: #e4e4e4;
+    margin-bottom: 20px;
+    word-break: break-word;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+
+  &__btns {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .controlItem {
+    border-radius: 2px;
+    color: #666;
+    font-size: 13px;
+    background: #f6f6f6;
+    transition: 0.5s;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #d8d8d8;
+    }
+
+    i {
+      margin-right: 2px;
+    }
+  }
+}
+
+button.btnBack {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    font-weight: 500;
+    color: #22216D;
+  }
+}
+
+.orderItem {
+  border-bottom: 1px solid #D5D5DC;
+
+  .detailOrdered {
+
+    h3 {
+      font-size: 16px;
+      color: #171725;
+      font-weight: 400;
+    }
+
+    h6 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 0;
+      color: #44444F;
+      font-weight: 300;
+    }
+
+    .detailOrderedPrice {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+
+  }
+}
+
+.detailBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    color: #171725;
+    line-height: 24px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .head {
+    margin-bottom: 8px;
+  }
+
+  .tableHeaderSearch {
+    display: flex;
+    justify-content: space-between;
+    background-color: inherit;
+    padding: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 2em;
+
+    &>div {
+      padding: 0;
+      // width: 11.5em;
+
+      &:first-child {
+        margin-right: 8px;
+        width: 77%;
+      }
+
+    }
+
+  }
+
+  .pickerRange {
+    padding: 11px;
+  }
+
+  .cvs {
+    position: relative;
+
+    :global {
+      .ant-table-wrapper {
+        table {
+          border-collapse: inherit;
+          border-spacing: 0 10px;
+        }
+
+        .ant-table {
+          background-color: inherit;
+
+          .ant-table-container {
+            padding: 0;
+          }
+        }
+
+        .ant-table-thead {
+          display: none;
+        }
+
+        .ant-table-tbody {
+          tr.ant-table-row {
+            background-color: #fff;
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-bottom: 8px;
+
+            td {
+              width: 100vw;
+              font-size: 16px;
+              padding: 4px 16px;
+              border: none;
+              border-radius: inherit;
+
+              .ant-tag {
+                border-radius: 5px;
+                border: none;
+                font-size: 14px;
+                height: 20px;
+                margin: 0;
+                padding: 0;
+                margin-right: -10px;
+              }
+
+              .btn-primary {
+                font-size: 16px;
+                color: #696974;
+                border-radius: 10px;
+                background-color: #f1f1f5;
+                padding: 10px 15px;
+                border: none;
+
+                &:hover {
+                  background-color: #403ecc;
+                  color: white;
+                }
+              }
+
+              &:nth-child(2) {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                color: #696974;
+              }
+
+              &:nth-child(3) {
+
+                color: #696974;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                width: fit-content;
+
+                &::before {
+                  content: 'Tổng tiền: ';
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: #696974;
+                }
+
+                &::after {
+                  content: ' VNĐ';
+                }
+              }
+
+              &:nth-child(4) {
+                width: 10em;
+                text-align: right;
+              }
+
+              &:nth-child(5) {
+                text-align: center;
+                padding-bottom: 16px;
+              }
+
+            }
+
+            td:first-child {
+              padding: 16px 16px 4px 16px;
+              margin-left: 0;
+              border: none;
+              border-radius: inherit;
+              color: #696974;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              margin-bottom: 8px;
+            }
+
+            td:last-child {
+              margin-right: 0;
+              border: none;
+              border-radius: inherit;
+            }
+
+          }
+        }
+
+        .ant-pagination {
+
+          .ant-pagination-prev,
+          .ant-pagination-next {
+            .ant-pagination-item-link {
+              border-radius: 5px;
+            }
+          }
+
+          .ant-pagination-item {
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+
+            &:hover {
+              color: #403ecc;
+            }
+          }
+
+          .ant-pagination-item-active {
+            color: #403ecc;
+          }
+
+          .ant-select-selector {
+            border-radius: 8px;
+            border: 1px solid #d5d5dc;
+          }
+        }
+
+        .ant-table-pagination-right {
+          margin-left: 15px;
+          margin-top: 20px;
+          justify-content: space-around;
+        }
+      }
+    }
+
+    .paginationInfo {
+      position: absolute;
+      left: 20px;
+      bottom: 54px;
+    }
+  }
+
+  button.btnBack {
+    margin-bottom: 18px;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .orderItem {
+    .detailOrdered {
+
+      h3 {
+        font-size: 14px;
+      }
+
+      h6 {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+    }
+  }
+
+  .detailBottom {
+    span {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

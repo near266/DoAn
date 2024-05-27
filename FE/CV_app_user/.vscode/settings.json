@@ -1,0 +1,14 @@
+{
+  "diffEditor.wordWrap": "off",
+  "editor.wordWrapColumn": 1080,
+  "dart.lineLength": 1000,
+  "html.format.wrapLineLength": 1200,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}

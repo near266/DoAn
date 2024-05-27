@@ -1,0 +1,21 @@
+.fieldControls {
+  &__clone,
+  &__remove {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__clone {
+    margin-right: 5px;
+    background-color: #3cb371;
+  }
+
+  &__remove {
+    background-color: #f15c4c;
+  }
+}

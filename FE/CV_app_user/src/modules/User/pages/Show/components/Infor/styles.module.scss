@@ -1,0 +1,110 @@
+.infor {
+  padding: 30px 20px 10px;
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.user {
+  text-align: center;
+
+  &__setting {
+    opacity: 0.7;
+    position: absolute;
+    top: 7px;
+    right: 12px;
+
+    a {
+      color: #474747;
+    }
+  }
+
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  &__username {
+    font-size: 15px;
+    color: var(--core-primary-color);
+  }
+}
+
+.doughnut {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 15px;
+
+  &__postStat {
+    text-align: center;
+  }
+
+  &__pointStat {
+    text-align: right;
+  }
+
+  &__value {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    font-size: 13px;
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.moreInfor {
+  margin-top: 15px;
+
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: 1px dashed #aaa;
+    cursor: pointer;
+
+    span {
+      font-size: 14px;
+      color: #aaa;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__cm {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  &__detail {
+    white-space: pre-line;
+    word-wrap: break-word;
+  }
+
+  &__addressIcon {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #aaa;
+  }
+
+  &__address {
+    font-weight: bold;
+  }
+}

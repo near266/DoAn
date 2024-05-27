@@ -1,0 +1,43 @@
+.tab {
+  &__content {
+    padding: 15px;
+    margin-bottom: 13px;
+    font-size: 14px;
+  }
+}
+
+.post {
+  padding: 15px;
+
+  &:not(:first-child) {
+    margin-top: 13px;
+  }
+
+  &__title {
+    color: #2c3e50;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 14px;
+  }
+}
+
+.postStatus {
+  margin-bottom: 6px;
+
+  &__info {
+    padding: 2px 5px;
+    border: 1px solid #17a2b8;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #17a2b8;
+  }
+
+  &__action {
+    font-size: 12px;
+    padding: 2px 12px;
+    margin-left: 10px;
+  }
+}

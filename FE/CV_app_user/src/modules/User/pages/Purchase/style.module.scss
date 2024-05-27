@@ -1,0 +1,17 @@
+@import 'react-step-progress/dist/index.css';
+
+.breadcrumbContainer {
+  .breadcrumbItem {
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #696974;
+    cursor: pointer;
+
+    &.boldItem {
+      font-weight: bold;
+      pointer-events: none;
+    }
+  }
+}

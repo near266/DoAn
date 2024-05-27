@@ -1,0 +1,57 @@
+.page {
+  padding-top: 0;
+  background-color: rgb(82 86 89);
+}
+
+.toolbar {
+  color: rgb(241 241 241);
+  background-color: rgb(50 54 57);
+  margin-bottom: 10px;
+  display: flex;
+  height: 48px;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.toolbarButtons {
+  display: flex;
+
+  &__action {
+    color: inherit;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background: rgb(255 255 255 / 8%);
+      color: inherit;
+    }
+  }
+}
+
+.contentPage {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+
+  &__viewer {
+    width: 21cm;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}

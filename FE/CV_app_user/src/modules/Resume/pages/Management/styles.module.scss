@@ -1,0 +1,107 @@
+.page {
+  padding: 30px 0;
+  background: #f6f6f6;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__addNew {
+    margin-left: 5px;
+    padding: 4px 10px;
+    font-size: 14px;
+
+    i {
+      margin-right: 8px;
+      font-size: 12px;
+    }
+  }
+}
+
+.record {
+  width: 100%;
+  background: #fff;
+  padding: 20px 30px;
+  position: relative;
+  display: flex;
+
+  &:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  &__template {
+    width: 120px;
+
+    img {
+      width: 85px;
+    }
+  }
+}
+
+.detail {
+  width: calc(100% - 120px);
+
+  &__title {
+    margin-bottom: 15px;
+
+    a {
+      font-size: 18px;
+      font-weight: 600;
+      color: #28a745;
+    }
+  }
+
+  &__viewLink {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: #e4e4e4;
+    margin-bottom: 20px;
+    word-break: break-word;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+
+  &__btns {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .controlItem {
+    border-radius: 2px;
+    color: #666;
+    font-size: 13px;
+    background: #f6f6f6;
+    transition: 0.5s;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #d8d8d8;
+    }
+
+    i {
+      margin-right: 2px;
+    }
+  }
+}

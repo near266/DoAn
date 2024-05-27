@@ -1,0 +1,28 @@
+@import '@globalStyles/common/mixins';
+
+.custom_ant {
+  .ant-steps-item-tail {
+    padding: 0 1.1rem;
+  }
+
+  .ant-steps-item-tail::after {
+    border-radius: 100px;
+    height: 3px;
+  }
+
+  .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+    background-color: #403ecc !important;
+  }
+
+  .ant-steps-item-title {
+    @include mobile {
+      font-size: 13.5px;
+      white-space: nowrap;
+    }
+  }
+  @include supermini {
+    .ant-steps-item-content {
+      width: auto;
+    }
+  }
+}

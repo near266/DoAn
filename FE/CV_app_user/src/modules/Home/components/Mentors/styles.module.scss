@@ -1,0 +1,152 @@
+@import '@globalStyles/common/mixins';
+
+.mentorInner {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 80px 20px 16px;
+  transition: all 0.4s ease 0s;
+}
+
+.mentorItems {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 24px;
+  transition: all 0.4s ease 0s;
+
+  // min-width: 280px;
+  scroll-snap-align: start;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.mentorTitle {
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 57px;
+  letter-spacing: -0.005em;
+  font-size: 2.2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+
+  @include mobile {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+  }
+}
+
+.mentorInfo {
+  text-align: center;
+}
+
+.mentorPhoto {
+  width: 122px;
+  height: 122px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px white;
+  position: absolute;
+  top: -66px;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  overflow: hidden;
+}
+
+.mentorContent {
+  height: 100px;
+}
+
+.mentorName {
+  font-size: 18px;
+  color: #202020;
+}
+
+.mentorProfession {
+  font-size: 14px;
+  color: #888;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.viewResume {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-decoration: none;
+  padding: 3px 4px;
+  font-weight: 600;
+}
+
+.bg_wrapper {
+  background: #22216d;
+  height: 400px;
+  z-index: -999;
+  /* z-index: -999; */
+  width: 100%;
+  position: absolute;
+}
+
+.mentorDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 auto;
+  max-width: 898px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #e2e2ea;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.hide_scrollBar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tabs {
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: none;
+  padding: 0;
+  font-size: 22px;
+  line-height: 39px;
+  letter-spacing: 0.117px;
+  color: #fff;
+
+  &__selected {
+    color: #fff !important;
+  }
+
+  &__flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.indicator {
+  background: #fff;
+  border-radius: 8px;
+}

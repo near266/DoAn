@@ -1,0 +1,155 @@
+$dropdown-color: #f8f9fa;
+
+html,
+body,
+#__next {
+  height: 100%;
+  font-family: 'Lexend Deca', sans-serif !important;
+}
+
+#__main {
+  padding-top: $headerHeight;
+  min-height: calc(100% - #{$footerHeight});
+  display: flex;
+  font-family: 'Lexend Deca', sans-serif !important;
+  flex-direction: column;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+img[src=''],
+img:not([src]) {
+  visibility: hidden;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+section#widget-grid {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  .widget-footer {
+    margin-top: 15px;
+  }
+}
+
+.required {
+  .col-form-label,
+  .core-label {
+    &::after {
+      content: ' *';
+      color: red;
+    }
+  }
+}
+
+.btn-table {
+  padding: 1px 6px;
+}
+
+.alert {
+  button.close {
+    margin-left: 5px;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.dropdown-item.active {
+  background-color: $dropdown-color;
+}
+
+.dropdown-item {
+  &:active {
+    background-color: $dropdown-color;
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.tag-editor {
+  border: 1px solid #ced4da !important;
+}
+
+.modal-dialog {
+  .modal-header {
+    padding: 5px 15px;
+    border-bottom: none;
+  }
+}
+
+img.avatar-user-general {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+// style dropdown menu
+.dropdown-toggle {
+  &:active {
+    box-shadow: none;
+  }
+
+  &::after {
+    content: none;
+  }
+}
+
+.dropdownMenu {
+  padding: 0;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.near_footer {
+  background: url('/images/kham-pha-youth.jpg');
+  height: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  .near_footer_button {
+    margin-top: 35px;
+  }
+
+  .btn-near-footer {
+    padding: 12px 45px;
+    font-weight: bold;
+    border: none;
+  }
+}
+
+// Hide ads if it not show
+ins.adsbygoogle[data-ad-status='unfilled'] {
+  display: none !important;
+}

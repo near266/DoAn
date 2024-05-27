@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  margin-inline: auto;
+
+  .headerTitle {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #22216d;
+    margin-bottom: 52px;
+    letter-spacing: -0.005em;
+    text-align: center;
+  }
+
+  .failedContainer {
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 23px 54px;
+
+    .failedTitle {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.1px;
+      color: #fafafb;
+      background: #eb4c4c;
+      border-radius: 20px;
+      padding: 10px 23px 9px 16px;
+      margin-bottom: 20px;
+    }
+
+    .failedInfo {
+      width: 50%;
+      margin-inline: auto;
+
+      .repayBtn {
+        background: #eb4c4c;
+        border-radius: 20px;
+        color: #fafafb;
+        display: flex;
+        align-items: center;
+        height: 45px;
+        padding: 10px 16px;
+
+        div {
+          display: block;
+          letter-spacing: 0.1px;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+
+      .checkedMethod {
+        padding-bottom: 10px;
+      }
+
+      .totalPrice {
+        border-top: 1px solid #403ecc;
+        padding-block: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .headerTitle {
+      font-size: 28px;
+      line-height: 39px;
+      text-align: left;
+      white-space: pre;
+    }
+
+    .failedContainer {
+      width: 100%;
+      padding: 14px 5px;
+
+      .failedInfo {
+        width: 100%;
+        padding: 14px 15px;
+      }
+    }
+  }
+}

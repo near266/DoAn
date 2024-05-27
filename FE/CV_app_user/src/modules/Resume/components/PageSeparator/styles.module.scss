@@ -1,0 +1,34 @@
+$item-height: 20px;
+$item-width: 58px;
+$pdf-compare-bottom: 54px;
+
+.textView {
+  position: absolute;
+  top: calc(29.7cm - #{$pdf-compare-bottom + $item-height / 2});
+  left: -$item-width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $item-width;
+  height: 20px;
+  cursor: pointer;
+  font-size: 10px;
+  color: #fff;
+  background: #3bb1cf;
+  border-radius: 3px 0 0 3px;
+
+  &:hover {
+    &__separator {
+      width: 21cm;
+    }
+  }
+
+  &__separator {
+    width: 0;
+    z-index: 100;
+    position: absolute;
+    left: 58px;
+    transition: all 0.2s linear;
+    border-bottom: 1px dashed #3bb1cf;
+  }
+}

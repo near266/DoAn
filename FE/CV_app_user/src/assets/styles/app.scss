@@ -1,0 +1,39 @@
+// Variables
+@import 'common/variables';
+@import 'common/mixins';
+
+// library
+@import '~bootstrap/scss/bootstrap';
+@import './layouts//nprogress';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@import './libs/tailwind';
+@import 'react-step-progress/dist/index.css';
+@import 'antd/dist/antd.css';
+@import './layouts/antd';
+@import './layouts/ckeditor';
+
+// layouts
+@import './layouts/loading';
+@import './layouts/header';
+@import './layouts/footer';
+@import './common/general';
+@import './layouts/responsive';
+@import './layouts/notification-button';
+@import './layouts/animation';
+@import './layouts/react-burger-bar';
+@import './layouts/global';
+
+
+:root {
+  --core-primary-color: #{$coreColor};
+}
+
+// fix conflic svg so make not good layout with bootstrap and many libs (like: quill)
+svg {
+  vertical-align: initial;
+}

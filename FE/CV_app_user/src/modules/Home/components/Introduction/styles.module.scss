@@ -1,0 +1,158 @@
+@import '@globalStyles/common/mixins';
+
+.introduction {
+  font-family: 'Lexend Deca', sans-serif;
+  position: relative;
+  display: flex;
+
+  // min-height: calc(100vh - 80px);
+
+  @include mobile {
+    min-height: auto;
+    margin-bottom: 100px;
+  }
+  @include tablet {
+    min-height: unset;
+  }
+
+  background-repeat: no-repeat;
+}
+
+.title {
+  margin-bottom: 10px;
+  color: #22216d;
+  font-weight: bold;
+}
+
+.shortContent {
+  padding: 0;
+
+  .title {
+    width: 645px;
+  }
+  @include tablet {
+    text-align: center;
+    padding: 40px 0;
+  }
+  @include mobile {
+    .title {
+      line-height: 2.2rem;
+      font-size: 28px !important;
+      width: 100%;
+    }
+
+    text-align: left;
+    margin: 0 !important;
+    padding: 10px 0;
+  }
+}
+
+.description {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #3da4d8;
+}
+
+.links {
+  padding: 0;
+  margin-top: 35px;
+  @include mobile {
+    width: 210px;
+
+    button {
+      padding: 10px 16px;
+      width: 164px;
+      height: 46px;
+    }
+  }
+
+  &__btn {
+    font-weight: bold;
+    width: 230px;
+    padding: 12px 0;
+    border-radius: 26px;
+    margin-bottom: 10px;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+
+      @include mobile {
+        margin-right: 0;
+      }
+    }
+
+    @include mobile {
+      width: 210px;
+
+      button {
+        padding: 10px 16px;
+        width: 164px;
+        height: 46px;
+      }
+    }
+  }
+
+  &__jobBtn {
+    background: #fdc501;
+    color: #22216d;
+  }
+
+  &__orientationBtn {
+    background: #22216d;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.createPost {
+  padding-left: 15px;
+
+  &__btn {
+    position: relative;
+    border: 1px solid #e33946;
+    padding: 10px 50px;
+    border-radius: 12px;
+    color: #22216d;
+    font-weight: bold;
+    font-size: 18px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+
+    &::before {
+      content: url('/images/homepage/plus.png');
+      position: absolute;
+      left: -25px;
+      top: -2px;
+    }
+  }
+}
+
+.image {
+  padding-top: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.mark {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 15px;
+
+  &__left {
+    width: 50%;
+    background: #fdc501;
+  }
+
+  &__right {
+    width: 50%;
+    background: #22216d;
+  }
+}

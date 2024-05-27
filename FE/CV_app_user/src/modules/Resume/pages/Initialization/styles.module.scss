@@ -1,0 +1,65 @@
+.page {
+  background: #f6f6f6;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.headline {
+  text-align: center;
+
+  &__title {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--core-primary-color);
+  }
+
+  &__description {
+    font-size: 15px;
+    color: #666;
+  }
+}
+
+.templateItem {
+  margin: 25px auto 10px;
+  position: relative;
+
+  &__hoverContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 65%);
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__use {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &__description {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__cover {
+    width: 100%;
+  }
+}
+
+.templateName {
+  text-align: center;
+  color: #444;
+}

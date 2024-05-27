@@ -1,0 +1,11 @@
+.listPost {
+  &__feed {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+
+    &:not(:first-child) {
+      margin-top: 13px;
+    }
+  }
+}

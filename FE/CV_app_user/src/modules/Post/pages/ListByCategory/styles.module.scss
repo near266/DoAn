@@ -1,0 +1,38 @@
+.page {
+  padding-top: 40px;
+  background: #f0f0f0;
+}
+
+.overview {
+  display: flex;
+  width: 100%;
+  border-radius: 0.2rem;
+  background-color: #fff;
+  padding: 24px;
+
+  &__image {
+    margin-right: 25px;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  &__headline {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  &__des {
+    color: #474747;
+  }
+
+  &__postCount {
+    font-weight: 600;
+  }
+
+  &__nameColor {
+    color: #aaa;
+  }
+}
